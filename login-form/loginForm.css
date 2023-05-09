@@ -1,0 +1,198 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position:relative;
+    overflow: hidden;
+    background: linear-gradient(90deg, #fad961 0%, #f76b1c 100%);
+}
+.shape1 {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 100px;
+    left: -150px;
+    background: linear-gradient( to right, #ede574, #e1f5c4);
+    transform: rotate(224deg);
+}
+.shape2 {
+    position: absolute;
+    height: 600px;
+    width: 100px;
+    bottom: 100px;
+    right: -50px;
+    background: linear-gradient( to right, #f99738, #f99738);
+    transform: rotate(224deg);
+    border-radius: 100px;
+}
+.shape3 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 20px;
+    right: 350px;
+    background: linear-gradient( to right, #f99738, #f99738);
+    transform: rotate(224deg);
+    border-radius: 100px;
+}
+.login {
+    background: #fff;
+    width: 300px;
+    margin: auto;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+.login input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    z-index: 1;
+    padding: 0 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.login .inputbox {
+    position: relative;
+}
+.login .inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 20px 0 10px;
+    pointer-events: none;
+    color: #fff;
+    letter-spacing: 3px;
+    transition: .5s;
+    top: -10px;
+    z-index: 99;
+    font-weight: bold;
+}
+.login .inputbox input:valid ~ span, 
+.login .inputbox input:focus ~ span{
+    color: #fff;
+    font-size: .75em;
+    transform: translateY(-14px);
+}
+.login .inputbox i{
+    position: absolute;
+    border-radius: 5px;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+    bottom: 20px;
+    left: 0px;
+    width: 100%;
+}
+.login .inputbox input:valid ~ i, 
+.login .inputbox input:focus ~ i{
+    height: 30px;
+}
+.login .login-form form{
+    position: absolute;
+    inset: 4px;
+    background: linear-gradient( to right, #0083b0, #00b4db);
+    border-radius: 10px;
+    padding: 30px 20px;
+    z-index: 2;
+}
+.login .login-form:before {
+    content: "";
+    position: absolute;
+    left: -200px;
+    right: -200px;
+    bottom: -200px;
+    top: -200px;
+    transform-origin: center center;
+    background: linear-gradient(red 25%, yellow 50%, black 75%, blue 100%);
+    z-index: 1;
+    animation: animation 3s linear infinite;
+}
+@keyframes animation {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.login-form form > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.inputbox a {
+    display: block;
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+    font-size: 12px;
+}
+#login {
+    background: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+#login:hover {
+    background: linear-gradient(90deg, #3f5efb 0%, #fc466b 100%);
+}
+.login-with{
+    text-align: center;
+}
+.login-with h1 {
+    font-size: 16px;
+    color: #fff;
+}
+.login-with span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: .3s;
+    cursor: pointer;
+    overflow: hidden;
+}
+.login-with span:hover {
+    transform: scale(1.1);
+}
+.login-with .fb{
+    background: #3b5998;color: #fff;
+}
+.login-with .fb:before {
+    font-family: fontawesome;
+    content: "\f09a";
+    font-size: 19px;
+}
+.login-with .gmail{
+    background: #e34133;color: #fff;
+}
+.login-with .gmail:before {
+    font-family: fontawesome;
+    content: "\f1a0";
+    font-size: 19px;
+}
+.login-with .twitter{
+    background: #00acee;color: #fff;
+}
+.login-with .twitter:before {
+    font-family: fontawesome;
+    content: "\f099";
+    font-size: 19px;
+}
+
+
+
+
